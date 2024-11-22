@@ -68,7 +68,7 @@ public class EleccionesController {
 
     @GetMapping("/resultados")
     public ResponseEntity<ResultadosDTO> getResultadosGenerales() {
-        return null;
+        return ResponseEntity.ok(resultService.obtenerResultadosNacionales());
     }
 
 }
